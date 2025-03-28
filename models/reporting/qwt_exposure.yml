@@ -1,0 +1,17 @@
+version: 2
+ 
+exposures:
+ 
+  - name: rpt_sales_by_customers_orders_dates
+    type: dashboard
+    maturity: high
+    url: https://google.com
+    description: sales by customers from various segments
+ 
+    depends_on:
+      - ref('fct_orders')
+      - ref('dim_customers')
+ 
+    owner:
+      name: david
+      email: david@qwt.com
