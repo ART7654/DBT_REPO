@@ -1,6 +1,6 @@
 version: 2
  
 models:
-  - name: trf_shipments
+  - name: trf_shipment
     config:
       schema: "{{env_var('DBT_TRANSFORMSCHEMA', 'transforming_dev')}}"
